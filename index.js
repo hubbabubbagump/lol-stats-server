@@ -152,8 +152,8 @@ app.get('/summoner', (req, res) => {
    }
 });
 
-app.listen(8080, () => {
-   console.log('League of legends stats app on port 8080');
+app.listen(process.env.PORT || 8080, () => {
+   console.log('League of legends stats app on port %d', this.address().port);
    if (process.env.LEAGUE_API_KEY) {
       console.log('League of legends API key: ' + process.env.LEAGUE_API_KEY);
       kayn = Kayn(process.env.LEAGUE_API_KEY)();
