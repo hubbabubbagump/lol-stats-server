@@ -64,6 +64,10 @@ const getMatches = async (matchlist, callback) => {
    }
 }
 
+app.get('/', (req, res) => {
+   res.redirect('/summoner');
+});
+
 app.get('/summoner', (req, res) => {
    if (!kayn) {
       res.status(500);
