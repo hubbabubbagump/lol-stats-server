@@ -8,7 +8,7 @@ let kayn;
 const re = new RegExp('^[0-9\\p{L} _\\.a-zA-Z]+$');
 const numMatches = 10;
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 function calculateKDA(kills, deaths, assists) {
    return ((kills + assists) / Math.max(1, deaths)).toFixed(2);
