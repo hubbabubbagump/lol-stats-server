@@ -1,0 +1,17 @@
+{
+  "name": "lol-stats-server",
+  "version": "1.0.0",
+  "description": "Server for a league of legends stats app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "author": "Ethan Jung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "kayn": "^0.9.8"
+  }
+}
